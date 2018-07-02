@@ -12,17 +12,17 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function() {
-	$( '#btn' ).hover(
+	$( '.js-btn' ).hover(
 	  function() {
-	    $( this ).removeClass("not-hovered").addClass("hovered");
+	    $( this ).removeClass('not-hovered').removeClass("color-yellow").addClass("hovered");
 	    setTimeout(function() {
-			  $( '#btn' ).addClass('color-yellow');
-			}, 1000);
+			  $( '.js-btn' ).addClass('color-yellow');
+			}, 600);
 	  }, function() {
 	    $( this ).removeClass( "hovered" ).addClass("not-hovered");
 	    setTimeout(function() {
-			  $( '#btn' ).removeClass('color-yellow');
-			}, 1000);
+			  $( '.js-btn' ).removeClass('color-yellow');
+			}, 600);
 	  }
 	);
 })
